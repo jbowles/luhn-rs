@@ -80,6 +80,8 @@ impl Luhn for u64 {
 
 fn main() {
     let ex1 = "4539 1488 0343 6467";
+    let ex2 = 4539148803436467;
+    /*
     let mut ttt = ex1.chars().map(|c| c.to_digit(10).map(u64::from));
 
     println!("ex1 digits: {:?} ", &ttt.next());
@@ -91,8 +93,7 @@ fn main() {
 
     let res = Digits::digits(ex1.to_string());
     println!("ex1 digits: {:?} for '{}'", res, ex1);
-
-    //let ex2 = 4539148803436467;
+    */
 
     //debug digits
     //let res = Digits::digits(ex1.to_string());
@@ -101,8 +102,8 @@ fn main() {
     //println!("ex2 digits: {:?} for '{}'", Digits::digits(ex2), ex2);
 
     //true
-    //println!("ex1(true): {} for '{}'", Luhn::luhn(ex1.to_string()), ex1);
-    //println!("ex2(true): {} for '{}'", Luhn::luhn(ex2), ex2);
+    println!("ex1(true): {} for '{}'", Luhn::luhn(ex1.to_string()), ex1);
+    println!("ex2(true): {} for '{}'", Luhn::luhn(ex2), ex2);
 
     /*
     //false
